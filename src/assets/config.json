@@ -1,0 +1,7 @@
+
+{
+"cluesUrl": "http://jservice.io/api/clues.json",
+"textfile": "assets/data.txt",
+"randomClueUrl": "http://jservice.io/api/random",
+"categoriesUrl": "http://jservice.io/api/categories"
+}

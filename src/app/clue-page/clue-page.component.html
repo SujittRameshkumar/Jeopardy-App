@@ -1,0 +1,18 @@
+<table style="width:100%">
+
+    <!-- <th> -->
+      <div class="table-tag" > 
+      <table style = "width: 100%">
+        
+          <th>Question</th>
+          <th>Answer</th>
+  
+      <tr *ngFor="let clue of randomData">
+        <td><a routerLink = "/clue-component" class="active" href="#clue-page">{{clue.question}}</a></td>
+        <!--<td><input type="button" value="Click" id="idButton">{{categoryl.id}}</input></td>  -->
+        <td>{{categoryl.answer}}</td> 
+      </tr>
+    </table>
+      </div>
+  </table>
+  

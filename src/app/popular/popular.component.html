@@ -1,0 +1,26 @@
+<h1> Most Popular Categories </h1>
+<div class="centered">
+
+<table style="width:100%">
+
+  <!-- <th> -->
+    <div *ngIf="ready"><h5>Please be patient while the data loads. The categories will load when the site is ready.</h5></div>
+  
+
+
+    <div class="table-tag" *ngIf = " filteredCategories != '' ">
+    <table style = "width: 100%">
+      
+        <th>Category</th>
+        <th>Clues Count</th>
+
+    <tr *ngFor="let categoryl of filteredCategories"><a routerLink="/app/clue-page">
+      <td>{{categoryl.title}}</td></a>
+      <td>{{categoryl.clues_count}}</td> 
+    </tr>
+  </table>
+    </div>
+</table>
+</div>
+
+

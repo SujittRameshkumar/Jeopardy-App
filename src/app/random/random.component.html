@@ -1,0 +1,62 @@
+
+
+
+<div>
+  <h1>Random Question</h1>
+  <p class="oneLine">Below is a randomly generated question from a previous episode of Jeopardy!. Good luck getting it right!</p>
+</div>
+
+<style>
+  table {
+  border-collapse:collapse;
+  }
+  td, th { 
+  padding: 10px; 
+  
+  border: 2px solid gray; 
+  text-align: center;
+  }
+</style>
+<table id = "myTable" style="width:100%">
+
+  <tr>
+    <th> Question </th>
+    <td *ngFor="let questionl of RandomData">{{questionl.question}}</td>
+  </tr>
+  <tr>
+      <th> Answer </th>
+    <td  *ngFor="let questionl of RandomData"><p class = "answer">{{questionl.answer}}</p></td>
+  </tr>
+
+
+  <tr>
+      <th> Air date </th>
+    <td  *ngFor="let questionl of RandomData"><p class = "airdate">{{questionl.airdate}}</p></td>
+  </tr>
+
+  <tr>
+      <th> Difficulty </th>
+    <td  *ngFor="let questionl of RandomData"><p class = "Difficulty">{{questionl.value}}</p></td>
+  </tr>
+    
+</table>
+
+
+
+
+
+
+<div class="randomButton">
+<button
+   onClick="window.location.reload();" >Randomize</button>
+</div>
+
+<script type="text/javascript" src="random.js">function toggleAnswer(){
+  var x = document.getElementById("answer");
+if (x.style.display == "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+
+}</script>
